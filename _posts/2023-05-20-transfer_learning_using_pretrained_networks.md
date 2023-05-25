@@ -1,4 +1,4 @@
-# Image classification using pre-trained networks
+# Transfer learning using pre-trained networks
 
 Training a neural network is a daunting task. In 2016, ResNet-18 -- a popular convolutional neural network (CNN) for image classification -- took 3.5 days to train on not one, but *four* Nvidia Kepler GPUs[<sup>1</sup>](http://torch.ch/blog/2016/02/04/resnets.html). It was trained on [ImageNet](https://www.image-net.org/), a dataset of over a million images of 1000 different objects[<sup>2</sup>](https://www.image-net.org/download.php). Today, we'll be training ResNet-18 to classify animals on my own single GPU in under 10 seconds.
 
