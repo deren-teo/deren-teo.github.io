@@ -1,6 +1,8 @@
 # Visualising ResNets using t-SNE
 
-Deep neural networks are amazing image classifiers (among many other things!), but don't you sometimes wonder how exactly they see the data they're classifying? In a [previous post](https://deren-teo.github.io/2023/05/20/image_classification_using_pretrained_networks.html), we saw how to use transfer learning to fine-tune a pre-trained ResNet-18 model to classify various animals. This will be following up on that with exploring how the trained model "sees" the data it's classifying.
+*Last updated: May 26, 2023*
+
+Deep neural networks are amazing image classifiers (among many other things!), but don't you sometimes wonder how exactly they see the data they're classifying? In a [previous post](https://deren-teo.github.io/2023/05/20/transfer_learning_using_pretrained_networks.html), we saw how to use transfer learning to fine-tune a pre-trained ResNet-18 model to classify various flowers. This will be following up on that with exploring how the trained model "sees" the data it's classifying.
 
 ## ResNet recap
 
@@ -59,7 +61,7 @@ Finally, we can plot the output returned by t-SNE:
 
 ![](/images/2023-05-25_tsne.png)
 
-Not bad! Although variance is inevitably lost when we reducing from 1024 dimensions all the way down to 2, the various animal classes nevertheless appear reasonably well separated. The relative distances between the classes also contains semantic meaning. For example, penguins and tigers are fairly well removed from the remaining classes. This probably reflects their distinctive colouration among the select animals. Meanwhile, the clusters of kangaroos and wolves appear much closer together. In a similar vein, this could be because their predominant colours are similar, and also have somewhat comparable anterior body shapes.
+Not bad! Although variance is inevitably lost when we reducing from 1024 dimensions all the way down to 2, the various flower classes nevertheless appear reasonably well separated. The relative distances between the classes also contains semantic meaning. For example, tulips and chamomiles are fairly well removed from the remaining classes. This probably reflects their distinctive shape compared to the other flowers. Meanwhile, roses and dandelions appear almost on top of each other. This is interesting, because we don't see them as being very similar at all. This is probably a case of variance being lost in projecting the data to a lower dimension. Given the classification accuracy, it's likely that these two classes are well separated in the model's feature space.
 
 ## In summary
 
