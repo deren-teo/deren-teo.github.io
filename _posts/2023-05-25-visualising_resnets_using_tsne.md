@@ -10,7 +10,7 @@ Before continuing, let's recap the architecture of the network we'll be working 
 
 ![](/images/2023-05-25_convnet.jpg)
 
-The above diagram, from the MATLAB documentation[<sup>1</sup>](https://au.mathworks.com/discovery/convolutional-neural-network-matlab.html), presents the three main types of CNN layers. In summary:
+The above diagram, from the [MATLAB documentation](https://au.mathworks.com/discovery/convolutional-neural-network-matlab.html)<sup>1</sup>, presents the three main types of CNN layers. In summary:
 
 - **Convolutional layers** convolve input data with a kernel to produce a feature map. The kernel is usually a 3x3 matrix of weights. A ReLU activation function is applied to feature map to introduce non-linearity -- a necessity for solving non-linear problems.
 
@@ -18,7 +18,7 @@ The above diagram, from the MATLAB documentation[<sup>1</sup>](https://au.mathwo
 
 - **Fully connected layers** typically exist only as the final layers of a CNN. Their purpose is to use the features extracted by the convolutional layers to decide on a classification for the input image. The softmax activation is more suitable for this than the ReLU, as the output of the softmax is bound between 0 and 1.
 
-Now, here's the architecture of ResNet-18[<sup>2</sup>](https://www.researchgate.net/figure/Original-ResNet-18-Architecture_fig1_336642248) for comparison:
+Now, here's the architecture of ResNet-18 for comparison, from this [journal submission](https://www.researchgate.net/figure/Original-ResNet-18-Architecture_fig1_336642248) <sup>2</sup>:
 
 ![](/images/2023-05-25_resnet18.png)
 
