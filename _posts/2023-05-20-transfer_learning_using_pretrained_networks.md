@@ -84,8 +84,10 @@ You're now witness to the wonder of transfer learning and how it accelerates mod
 
 ## References
 
-[1] S. Gross and M. Wilber. "Training and investigating Residual Nets." (Feb 4, 2016), [Online]. Available: http://torch.ch/blog/2016/02/04/resnets.html
+[1] S. Gross and M. Wilber. "Training and investigating Residual Nets." (2016), [Online]. Available: http://torch.ch/blog/2016/02/04/resnets.html
 
 [2] Stanford Vision Lab. "Download." (2020), [Online]. Available: https://www.image-net.org/download.php
 
-[3] J. Brownlee. "A gentle introduction to transfer learning for deep learning." (Sep 16, 2019), [Online]. Available: https://machinelearningmastery.com/transfer-learning-for-deep-learning/
+[3] J. Brownlee. "A gentle introduction to transfer learning for deep learning." (2019), [Online]. Available: https://machinelearningmastery.com/transfer-learning-for-deep-learning/
+
+[4] A. Mamaev. "Flowers recognition." (2021), [Online]. Available: https://www.kaggle.com/datasets/alxmamaev/flowers-recognition

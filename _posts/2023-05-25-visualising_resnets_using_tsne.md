@@ -77,4 +77,4 @@ We've now caught a glimpse into how deep neural networks "see" the data they cla
 
 [4] G. Serebryakov. “t-SNE for feature visualization.” (2020), [Online]. Available: https://learnopencv.com/t-sne-for-feature-visualization/.
 
-[5] AmorfEvo. "Feature extraction after fine-tune from flatten-layer," [Online]. Available: https://forums.fast.ai/t/feature-extraction-after-fine-tune-from-flatten-layer/102791/2
+[5] AmorfEvo. "Feature extraction after fine-tune from flatten-layer." (2022), [Online]. Available: https://forums.fast.ai/t/feature-extraction-after-fine-tune-from-flatten-layer/102791/2
