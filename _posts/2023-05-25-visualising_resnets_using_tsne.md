@@ -42,7 +42,7 @@ x, y = dls.one_batch()
 feature_vectors = learn.model(x)
 ```
 
-This cuts the model right before the classifiction layer and extracts the representation of a batch of data. If we print `feature_vectors.shape`:
+The above method of cutting the model comes from user AmorfEvo in this [fastai forum thread](https://forums.fast.ai/t/feature-extraction-after-fine-tune-from-flatten-layer/102791) <sup>5</sup>. It cuts the model right before the classifiction layer so that when we run a batch a data through it, we can extract the model's final representation of the data. If we print `feature_vectors.shape`:
 
 ```
 torch.Size([64, 1024])
@@ -76,3 +76,5 @@ We've now caught a glimpse into how deep neural networks "see" the data they cla
 [3] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770–778.
 
 [4] G. Serebryakov. “t-SNE for feature visualization.” (2020), [Online]. Available: https://learnopencv.com/t-sne-for-feature-visualization/.
+
+[5] AmorfEvo. "Feature extraction after fine-tune from flatten-layer," [Online]. Available: https://forums.fast.ai/t/feature-extraction-after-fine-tune-from-flatten-layer/102791/2
